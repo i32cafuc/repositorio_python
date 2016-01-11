@@ -1,0 +1,15 @@
+Tareas:
+
+	== Menos importante ==
+	- Formatear las monedas en los displays de los modelos (IMPORTANTE: debe separarse por puntos)
+	
+
+	== Mejoras (no cuentan en la entrega) ==
+	- Mejorar mensaje de confirmación cuando se compra un piloto
+	- Mejorar mensaje de confirmación cuando se vende un piloto
+	- Al eliminar la cuenta de usuario borrar su uteam
+	- Poner el numero de la posicion del ranking correctamente, en paginacion empieza de 0 en cada pagina
+	- I18n
+
+Pensar:
+	-Parte de administracion como otra app

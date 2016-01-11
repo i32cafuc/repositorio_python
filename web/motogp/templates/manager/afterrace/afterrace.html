@@ -1,0 +1,46 @@
+{% extends "manager/estructura.html" %}
+{% block title %}Despues de Carrera {% endblock %}
+{% block contenido %}
+
+<script type="text/javascript">
+
+function validateForm(){
+	var validate = true;
+	$("#afterRace").find(':input[type="number"]').each(function() {
+		if(!$.isNumeric($(this).val())){
+			$(this).parent().addClass("has-error");
+			validate=false;
+		} else {
+			$(this).parent().removeClass("has-error");
+		}
+    });
+
+    return validate;
+
+}
+
+</script>
+
+<form method="post" action="" onsubmit="return validateForm()" id="afterRace">
+    {% csrf_token %}
+
+	   
+    {% for category in lista %}
+    	<div class="row"> 
+    		<h2>Moto {{forloop.counter}}</h2>
+	    	{% for rider in category %}
+	    	<div class="col-md-4">
+	    		<div class="form-group"> 
+		    		<label class="control-label" for="rider_{{rider.pk}}">{{rider}}</label> 
+		    		<input type="number" class="form-control" name="rider_{{rider.pk}}"> 
+		    	</div>
+			</div>
+			{% endfor %}
+		</div>
+		<hr>
+    {% endfor %}
+	
+    <button class="btn btn-primary" type="submit">Actualizar</button>
+</form> 
+
+{% endblock %}

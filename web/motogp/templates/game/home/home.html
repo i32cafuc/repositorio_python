@@ -1,0 +1,45 @@
+{% extends "game/estructura.html" %}
+{% block title %} Home {% endblock %}
+{% block contenido %}
+
+<div class="row">
+	<div class="col-lg-4">
+	  <h2>Gestion</h2>
+	  
+	  {% if user.userprofile.uteam.loan %}
+	  	<p class="text-danger">Tienes una deuda de {{ user.userprofile.uteam.owe }}</p>
+	  {% else %}
+	  	<p class="text-success">No tienes deuda</p>
+	  {% endif %}
+
+	  {% if user.userprofile.uteam.enrolment %}
+	  	<p class="text-success">Inscrito</p>
+	  {% else %}
+	  	<p class="text-danger">Tienes que inscribierte</p>
+	  {% endif %}
+	  
+	  {% if user.userprofile.uteam.maintenance %}
+	  	<p class="text-success">Mantenimiento Pagado</p>
+	  {% else %}
+	  	<p class="text-danger">No has pagado el mantenimiento </p>
+	  {% endif %}
+
+	  <p>Total sueldos es: {{user.userprofile.uteam.displayTotalSalary }} </p>
+
+	  <p>Tienes {{ user.userprofile.uteam.point }} puntos </p>
+	</div>
+	<div class="col-lg-8">
+	  <h2>Proxima Carrera</h2>
+      {% include "game/home/countdown.html" %}
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-lg-12">
+	  <h2>Carreras</h2>
+	  {% include "game/home/map.html" %}
+	</div>
+</div>
+
+	
+{% endblock %}

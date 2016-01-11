@@ -1,0 +1,5 @@
+Importar datos:
+python manage.py loaddata datas\datas.json
+
+Exportar datos:
+python manage.py dumpdata motogp.team > datas\team.json

@@ -1,0 +1,55 @@
+{% extends "game/estructura.html" %}
+{% block title %}Mis Pilotos{% endblock %}
+{% block contenido %}
+
+{% load staticfiles %}
+
+
+<script type="text/javascript">
+
+	function sell(pk,price){
+		$.ajax({
+			url : "{% url 'myriders' %}",
+			data : { id : pk },
+			type : 'POST',
+			success : function(json) {
+				$('#rider_'+pk).toggle( "slow" );
+				$('#coin_uteam').html($('#coin_uteam').html()-price);
+				alert("Se ha efectuado la venta con exito")
+			},
+			error : function(xhr, status) {
+				alert('Disculpe, existió un problema');
+			}
+		});
+	}
+
+</script>
+
+<div class="row text-center">
+	{% if riders.count == 0 %}
+		<div class="alert alert-info" role="alert">
+			<p class="bg-info">No tienes ningun piloto. <a href="{% url 'market' %}" class="alert-link">Ve a la tienda</a> y ficha al menos un piloto</p>
+		</div>
+		
+	{% else %}
+		{% for rider in riders %}
+		  <div id="rider_{{rider.pk}}" class="col-md-6 col-my-rider">
+		  	<h2>{{rider}}</h2>
+		  	<img src="{{ MEDIA_URL }}{{ rider.image }}" />
+			<p>Escuderia: {{rider.team}}</p>
+			<p>Valoracion: {{rider.valuation}}</p>
+			<p>Sueldo: {{rider.salary}}</p>
+			<p>Precio Mercado: {{rider.displayPrice}}</p>
+			<p>Precio Venta: {{rider.displayPriceOnSale}}</p>
+			
+			<a href="#" class="btn btn-danger" onclick="sell({{rider.pk}},{{rider.price_on_sale}});">
+				Vender
+			</a>
+		  </div>
+		 
+		{% endfor %}
+	{% endif %}
+</div>
+
+
+{% endblock %}

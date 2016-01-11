@@ -1,0 +1,26 @@
+[
+   {
+      "fields":{
+         "min_price":50000,
+         "name":"motogp"
+      },
+      "model":"motogp.category",
+      "pk":1
+   },
+   {
+      "fields":{
+         "min_price":25000,
+         "name":"moto2"
+      },
+      "model":"motogp.category",
+      "pk":2
+   },
+   {
+      "fields":{
+         "min_price":10000,
+         "name":"moto3"
+      },
+      "model":"motogp.category",
+      "pk":3
+   }
+]

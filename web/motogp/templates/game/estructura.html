@@ -1,0 +1,45 @@
+{% load staticfiles %}
+<html>
+  <head>
+    <title>MotoGP-Challenge</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'plugins/bootstrap-3.3.5/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'plugins/bootstrap-slider/css/bootstrap-slider.css' %}" rel="stylesheet">
+    <link href="{% static 'css/mystyle.css' %}" rel="stylesheet">
+    
+    <script src="{% static 'plugins/jquery-1.11.3/jquery-1.11.3.min.js' %}"></script>
+    <script src="{% static 'plugins/bootstrap-3.3.5/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'plugins/bootstrap-slider/js/bootstrap-slider.js' %}"></script>
+    <script src="{% static 'js/djangoAjax.js' %}"></script>
+
+<script type="text/javascript">
+$(function() {
+    $( ".display-tooltip" ).tooltip({
+      show: {
+        effect: "slideDown",
+        delay: 250
+      }
+    });
+  });
+</script>
+
+  </head>
+  <body>
+    <div class="container contenedor">
+      
+      {% include "game/_navbar.html" %}
+
+      {% include "_message.html" %}
+      
+      <h1>{% block title %} {% endblock %}</h1>
+
+      {% block contenido %} {% endblock %}
+
+      
+
+    </div> <!-- /container -->
+    
+    {% include "game/footer.html" %}
+  </body>
+</html>

@@ -1,0 +1,200 @@
+[
+   {
+      "fields":{
+         "date_block":"2016-03-20",
+         "country":4,
+         "name":"GP Qatar 2016",
+         "circuit":3,
+         "date_race":"2016-03-20"
+      },
+      "model":"motogp.race",
+      "pk":4
+   },
+   {
+      "fields":{
+         "date_block":"2016-04-03",
+         "country":5,
+         "name":"GP Argentina 2016",
+         "circuit":4,
+         "date_race":"2016-04-03"
+      },
+      "model":"motogp.race",
+      "pk":5
+   },
+   {
+      "fields":{
+         "date_block":"2016-04-10",
+         "country":6,
+         "name":"GP Americas 2016",
+         "circuit":5,
+         "date_race":"2016-04-10"
+      },
+      "model":"motogp.race",
+      "pk":6
+   },
+   {
+      "fields":{
+         "date_block":"2016-04-24",
+         "country":7,
+         "name":"GP Espana 2016",
+         "circuit":6,
+         "date_race":"2016-04-24"
+      },
+      "model":"motogp.race",
+      "pk":7
+   },
+   {
+      "fields":{
+         "date_block":"2016-05-08",
+         "country":8,
+         "name":"GP Francia 2016",
+         "circuit":7,
+         "date_race":"2016-05-08"
+      },
+      "model":"motogp.race",
+      "pk":8
+   },
+   {
+      "fields":{
+         "date_block":"2016-05-22",
+         "country":9,
+         "name":"GP Italia 2016",
+         "circuit":8,
+         "date_race":"2016-05-22"
+      },
+      "model":"motogp.race",
+      "pk":9
+   },
+   {
+      "fields":{
+         "date_block":"2016-06-05",
+         "country":10,
+         "name":"GP Catalunya 2016",
+         "circuit":9,
+         "date_race":"2016-06-05"
+      },
+      "model":"motogp.race",
+      "pk":10
+   },
+   {
+      "fields":{
+         "date_block":"2016-06-26",
+         "country":11,
+         "name":"GP PaIses Bajos 2016",
+         "circuit":10,
+         "date_race":"2016-06-26"
+      },
+      "model":"motogp.race",
+      "pk":11
+   },
+   {
+      "fields":{
+         "date_block":"2016-07-17",
+         "country":12,
+         "name":"GP Alemania 2016",
+         "circuit":11,
+         "date_race":"2016-07-17"
+      },
+      "model":"motogp.race",
+      "pk":12
+   },
+   {
+      "fields":{
+         "date_block":"2016-08-14",
+         "country":13,
+         "name":"GP Austria 2016",
+         "circuit":12,
+         "date_race":"2016-08-14"
+      },
+      "model":"motogp.race",
+      "pk":13
+   },
+   {
+      "fields":{
+         "date_block":"2016-08-21",
+         "country":14,
+         "name":"GP Republica Checa 2016",
+         "circuit":13,
+         "date_race":"2016-08-21"
+      },
+      "model":"motogp.race",
+      "pk":14
+   },
+   {
+      "fields":{
+         "date_block":"2016-09-04",
+         "country":15,
+         "name":"GP Gran Bretana 2016",
+         "circuit":14,
+         "date_race":"2016-09-04"
+      },
+      "model":"motogp.race",
+      "pk":15
+   },
+   {
+      "fields":{
+         "date_block":"2016-09-11",
+         "country":16,
+         "name":"GP San Marino y de la Riviera de Rimini 2016",
+         "circuit":15,
+         "date_race":"2016-09-11"
+      },
+      "model":"motogp.race",
+      "pk":16
+   },
+   {
+      "fields":{
+         "date_block":"2016-09-25",
+         "country":17,
+         "name":"GP Aragon 2016",
+         "circuit":16,
+         "date_race":"2016-09-25"
+      },
+      "model":"motogp.race",
+      "pk":17
+   },
+   {
+      "fields":{
+         "date_block":"2016-10-16",
+         "country":18,
+         "name":"GP Japon 2016",
+         "circuit":17,
+         "date_race":"2016-10-16"
+      },
+      "model":"motogp.race",
+      "pk":18
+   },
+   {
+      "fields":{
+         "date_block":"2016-10-23",
+         "country":19,
+         "name":"GP Australia 2016",
+         "circuit":18,
+         "date_race":"2016-10-23"
+      },
+      "model":"motogp.race",
+      "pk":19
+   },
+   {
+      "fields":{
+         "date_block":"2016-10-30",
+         "country":20,
+         "name":"GP Malasia 2016",
+         "circuit":19,
+         "date_race":"2016-10-30"
+      },
+      "model":"motogp.race",
+      "pk":20
+   },
+   {
+      "fields":{
+         "date_block":"2016-11-13",
+         "country":21,
+         "name":"GP Valencia 2016",
+         "circuit":20,
+         "date_race":"2016-11-13"
+      },
+      "model":"motogp.race",
+      "pk":21
+   }
+]

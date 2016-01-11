@@ -1,0 +1,15 @@
+
+{% extends "game/estructura.html" %}
+{% block title %}Cambiar Correo {% endblock %}
+{% block contenido %}
+
+{% include "game/setting/menu.html" %}
+
+<div class="tab-content">
+	<form method="post" action="">
+	        {% csrf_token %}
+	        {{ form.as_p }}
+	        <button class="btn btn-primary" type="submit">Actualizar Email</button>
+	    </form>
+</div>
+{% endblock %}

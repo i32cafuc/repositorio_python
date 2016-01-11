@@ -1,0 +1,452 @@
+[
+   {
+      "fields":{
+         "category":1,
+         "image":"teams/comodin.jpg",
+         "name":"Aprilia Racing Team Gresini"
+      },
+      "model":"motogp.team",
+      "pk":7
+   },
+   {
+      "fields":{
+         "category":1,
+         "image":"teams/comodin_Uq0w56J.jpg",
+         "name":"Aspar MotoGP Team"
+      },
+      "model":"motogp.team",
+      "pk":8
+   },
+   {
+      "fields":{
+         "category":1,
+         "image":"teams/comodin_SbA5PuG.jpg",
+         "name":"Avintia Racing"
+      },
+      "model":"motogp.team",
+      "pk":9
+   },
+   {
+      "fields":{
+         "category":1,
+         "image":"teams/comodin_tsCGtmu.jpg",
+         "name":"Ducati Team"
+      },
+      "model":"motogp.team",
+      "pk":10
+   },
+   {
+      "fields":{
+         "category":1,
+         "image":"teams/comodin_iwhrhqO.jpg",
+         "name":"IodaRacing Project"
+      },
+      "model":"motogp.team",
+      "pk":11
+   },
+   {
+      "fields":{
+         "category":1,
+         "image":"teams/comodin_pTnzKCy.jpg",
+         "name":"LCR Honda"
+      },
+      "model":"motogp.team",
+      "pk":12
+   },
+   {
+      "fields":{
+         "category":1,
+         "image":"teams/comodin_RG5T6Re.jpg",
+         "name":"Marc VDS"
+      },
+      "model":"motogp.team",
+      "pk":13
+   },
+   {
+      "fields":{
+         "category":1,
+         "image":"teams/comodin_3gtXalx.jpg",
+         "name":"Monster Yamaha Tech 3"
+      },
+      "model":"motogp.team",
+      "pk":14
+   },
+   {
+      "fields":{
+         "category":1,
+         "image":"teams/comodin_JBsGCcE.jpg",
+         "name":"Movistar Yamaha MotoGP"
+      },
+      "model":"motogp.team",
+      "pk":15
+   },
+   {
+      "fields":{
+         "category":1,
+         "image":"teams/comodin_HOCd7IJ.jpg",
+         "name":"Octo Pramac Racing"
+      },
+      "model":"motogp.team",
+      "pk":16
+   },
+   {
+      "fields":{
+         "category":1,
+         "image":"teams/comodin_pfDt2r9.jpg",
+         "name":"Repsol Honda Team"
+      },
+      "model":"motogp.team",
+      "pk":17
+   },
+   {
+      "fields":{
+         "category":1,
+         "image":"teams/comodin_Tgm3vgh.jpg",
+         "name":"Team SUZUKI ECSTAR"
+      },
+      "model":"motogp.team",
+      "pk":18
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_67HJklp.jpg",
+         "name":"AGP Racing"
+      },
+      "model":"motogp.team",
+      "pk":19
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_OkUXU0j.jpg",
+         "name":"AGR Team"
+      },
+      "model":"motogp.team",
+      "pk":20
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_EOYQqez.jpg",
+         "name":"Ajo Motorsport"
+      },
+      "model":"motogp.team",
+      "pk":21
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_RbEIbtV.jpg",
+         "name":"Derendinger Interwetten"
+      },
+      "model":"motogp.team",
+      "pk":22
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_fpXfp5K.jpg",
+         "name":"Dynavolt Intact GP"
+      },
+      "model":"motogp.team",
+      "pk":23
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_C8GWOXo.jpg",
+         "name":"Estrella Galicia 0,0 Marc VDS"
+      },
+      "model":"motogp.team",
+      "pk":24
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_hDqbc0t.jpg",
+         "name":"Federal Oil Gresini Moto2"
+      },
+      "model":"motogp.team",
+      "pk":25
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_FGSzdpc.jpg",
+         "name":"Forward Team"
+      },
+      "model":"motogp.team",
+      "pk":26
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_eknrTze.jpg",
+         "name":"IDEMITSU Honda Team Asia"
+      },
+      "model":"motogp.team",
+      "pk":27
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_YFTexK6.jpg",
+         "name":"Iodaracing Project SRL"
+      },
+      "model":"motogp.team",
+      "pk":28
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_OjEGbkc.jpg",
+         "name":"Italtrans Racing Team"
+      },
+      "model":"motogp.team",
+      "pk":29
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_6CtW7ef.jpg",
+         "name":"JPMoto Malaysia"
+      },
+      "model":"motogp.team",
+      "pk":30
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_1sr8R26.jpg",
+         "name":"Leopard Racing"
+      },
+      "model":"motogp.team",
+      "pk":31
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_gv1mNCa.jpg",
+         "name":"Paginas Amarillas HP 40"
+      },
+      "model":"motogp.team",
+      "pk":32
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_fSUIJPy.jpg",
+         "name":"Petronas Raceline Malaysia"
+      },
+      "model":"motogp.team",
+      "pk":33
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_C87Rqrn.jpg",
+         "name":"QMMF Racing Team"
+      },
+      "model":"motogp.team",
+      "pk":34
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_GSegHdG.jpg",
+         "name":"Speed Up"
+      },
+      "model":"motogp.team",
+      "pk":35
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_I2TteiS.jpg",
+         "name":"Stop and Go Racing Team"
+      },
+      "model":"motogp.team",
+      "pk":36
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_dhJCqBr.jpg",
+         "name":"Tasca Racing Scuderia Moto2"
+      },
+      "model":"motogp.team",
+      "pk":37
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_xFJ8sQN.jpg",
+         "name":"Tech 3"
+      },
+      "model":"motogp.team",
+      "pk":38
+   },
+   {
+      "fields":{
+         "category":2,
+         "image":"teams/comodin_dNMXXAr.jpg",
+         "name":"Technomag Interwetten"
+      },
+      "model":"motogp.team",
+      "pk":39
+   },
+   {
+      "fields":{
+         "category":3,
+         "image":"teams/comodin_H5vAFnc.jpg",
+         "name":"CIP"
+      },
+      "model":"motogp.team",
+      "pk":40
+   },
+   {
+      "fields":{
+         "category":3,
+         "image":"teams/comodin_AHUTNHB.jpg",
+         "name":"Drive M7 SIC Racing Team"
+      },
+      "model":"motogp.team",
+      "pk":41
+   },
+   {
+      "fields":{
+         "category":3,
+         "image":"teams/comodin_z9Q7dAx.jpg",
+         "name":"Estrella Galicia 0,0"
+      },
+      "model":"motogp.team",
+      "pk":42
+   },
+   {
+      "fields":{
+         "category":3,
+         "image":"teams/comodin_Ri2Ha85.jpg",
+         "name":"Gresini Racing Moto3"
+      },
+      "model":"motogp.team",
+      "pk":43
+   },
+   {
+      "fields":{
+         "category":3,
+         "image":"teams/comodin_6KQ7Fof.jpg",
+         "name":"Honda Team Asia"
+      },
+      "model":"motogp.team",
+      "pk":44
+   },
+   {
+      "fields":{
+         "category":3,
+         "image":"teams/comodin_iCSSTfI.jpg",
+         "name":"Leopard Racing"
+      },
+      "model":"motogp.team",
+      "pk":45
+   },
+   {
+      "fields":{
+         "category":3,
+         "image":"teams/comodin_BCxK66c.jpg",
+         "name":"MAPFRE Team MAHINDRA"
+      },
+      "model":"motogp.team",
+      "pk":46
+   },
+   {
+      "fields":{
+         "category":3,
+         "image":"teams/comodin_QFKWVSD.jpg",
+         "name":"MTA Team Italia"
+      },
+      "model":"motogp.team",
+      "pk":47
+   },
+   {
+      "fields":{
+         "category":3,
+         "image":"teams/comodin_aVqSToR.jpg",
+         "name":"Ongetta-Rivacold"
+      },
+      "model":"motogp.team",
+      "pk":48
+   },
+   {
+      "fields":{
+         "category":3,
+         "image":"teams/comodin_psNfEsx.jpg",
+         "name":"Outox Reset Drink Team"
+      },
+      "model":"motogp.team",
+      "pk":49
+   },
+   {
+      "fields":{
+         "category":3,
+         "image":"teams/comodin_AmoUv9q.jpg",
+         "name":"RBA Racing Team"
+      },
+      "model":"motogp.team",
+      "pk":50
+   },
+   {
+      "fields":{
+         "category":3,
+         "image":"teams/comodin_2e4Fd6C.jpg",
+         "name":"Red Bull KTM Ajo"
+      },
+      "model":"motogp.team",
+      "pk":51
+   },
+   {
+      "fields":{
+         "category":3,
+         "image":"teams/comodin_4plfBjp.jpg",
+         "name":"RW Racing GP BV"
+      },
+      "model":"motogp.team",
+      "pk":52
+   },
+   {
+      "fields":{
+         "category":3,
+         "image":"teams/comodin_1Nw4V5s.jpg",
+         "name":"SaxoPrint RTG"
+      },
+      "model":"motogp.team",
+      "pk":53
+   },
+   {
+      "fields":{
+         "category":3,
+         "image":"teams/comodin_ObgV2Hl.jpg",
+         "name":"Schedl GP Racing"
+      },
+      "model":"motogp.team",
+      "pk":54
+   },
+   {
+      "fields":{
+         "category":3,
+         "image":"teams/comodin_C1PntKi.jpg",
+         "name":"SKY Racing Team VR46"
+      },
+      "model":"motogp.team",
+      "pk":55
+   },
+   {
+      "fields":{
+         "category":3,
+         "image":"teams/comodin_madFDTP.jpg",
+         "name":"Team Laglisse"
+      },
+      "model":"motogp.team",
+      "pk":56
+   }
+]

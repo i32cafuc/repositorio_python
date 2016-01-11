@@ -1,0 +1,24 @@
+.display_coin{
+	margin-bottom: 0px;
+}
+
+.centrarDiv{
+    margin: 0 auto !important;
+    width: 90% !important;
+}
+
+.contenedor{
+	margin: 0 auto;
+	width: 84.7%;
+	min-height: 90%;
+}
+
+h1{
+	border-bottom: 1px solid black;
+	padding-bottom: 6px;
+    margin-bottom: 25px;
+}
+
+#loginbox{
+	margin-top: 4%;
+}

@@ -1,0 +1,44 @@
+{% extends "game/estructura.html" %}
+{% block title %}Ranking {% endblock %}
+{% block contenido %}
+{% load staticfiles %}
+<p>{{page}}</p>
+<p>{{nro_by_page}}</p>
+<p></p>
+	<table class="table table-hover">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Username</th>
+          <th>Nombre Equipo</th>
+          <th>Puntos</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for user in users.object_list %}
+          {% if not user.debut %}
+            <tr>
+              <th scope="row">{{forloop.counter}}</th>
+              <td>{{user}}</td>
+              <td>{{user.uteam.name}}</td>
+              <td>{{user.uteam.point}}</td>
+            </tr>
+          {% endif %} 
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <nav>
+      <ul class="pager">
+        {% if users.has_previous %}
+          <li><a href="?page={{ users.previous_page_number }}"> Previous </a></li>
+        {% endif %}
+
+        {% if users.has_next %}
+          <li><a href="?page={{ users.next_page_number }}"> Next </a></li>
+        {% endif %}
+
+        <p>Pagina {{ users.number }} de {{ users.paginator.num_pages}} </p>
+      </ul>
+      </nav>
+{% endblock %}

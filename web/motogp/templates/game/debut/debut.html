@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Debut {% endblock %}
+{% block contenido %}
+
+<div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3"> 
+    <div class="panel panel-default" >
+        <div class="panel-heading">
+            <div class="panel-title text-center">Unirse a una liga</div>
+        </div>     
+
+        <div class="panel-body" >
+			<form method="post" action="">
+			    {% csrf_token %}
+			    {{ form.as_p }}
+			    <button class="btn btn-primary" type="submit">Crear</button>
+			</form> 	
+        </div>                     
+    </div>  
+</div>
+{% endblock %}

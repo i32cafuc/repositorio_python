@@ -1,0 +1,146 @@
+[
+   {
+      "fields":{
+         "image":"circuits/QAT.png",
+         "name":"Circuito Internacional del Losail"
+      },
+      "model":"motogp.circuit",
+      "pk":3
+   },
+   {
+      "fields":{
+         "image":"",
+         "name":"Termas de Rio Hondo"
+      },
+      "model":"motogp.circuit",
+      "pk":4
+   },
+   {
+      "fields":{
+         "image":"circuits/AME.png",
+         "name":"Circuito de Las Americas"
+      },
+      "model":"motogp.circuit",
+      "pk":5
+   },
+   {
+      "fields":{
+         "image":"circuits/SPA.png",
+         "name":"Jerez de la Frontera"
+      },
+      "model":"motogp.circuit",
+      "pk":6
+   },
+   {
+      "fields":{
+         "image":"circuits/FRA.png",
+         "name":"Le Mans"
+      },
+      "model":"motogp.circuit",
+      "pk":7
+   },
+   {
+      "fields":{
+         "image":"circuits/ITA.png",
+         "name":"Mugello"
+      },
+      "model":"motogp.circuit",
+      "pk":8
+   },
+   {
+      "fields":{
+         "image":"circuits/CAT.png",
+         "name":"Circuit de Barcelona-Catalunya"
+      },
+      "model":"motogp.circuit",
+      "pk":9
+   },
+   {
+      "fields":{
+         "image":"circuits/NED.png",
+         "name":"TT Assen"
+      },
+      "model":"motogp.circuit",
+      "pk":10
+   },
+   {
+      "fields":{
+         "image":"circuits/GER.png",
+         "name":"Sachsenring"
+      },
+      "model":"motogp.circuit",
+      "pk":11
+   },
+   {
+      "fields":{
+         "image":"circuits/AUS.png",
+         "name":"Red Bull Ring"
+      },
+      "model":"motogp.circuit",
+      "pk":12
+   },
+   {
+      "fields":{
+         "image":"circuits/CZE.png",
+         "name":"Brno"
+      },
+      "model":"motogp.circuit",
+      "pk":13
+   },
+   {
+      "fields":{
+         "image":"circuits/GBR.png",
+         "name":"Silverstone"
+      },
+      "model":"motogp.circuit",
+      "pk":14
+   },
+   {
+      "fields":{
+         "image":"circuits/RSM.png",
+         "name":"Misano"
+      },
+      "model":"motogp.circuit",
+      "pk":15
+   },
+   {
+      "fields":{
+         "image":"circuits/ARA.png",
+         "name":"MotorLand Aragon"
+      },
+      "model":"motogp.circuit",
+      "pk":16
+   },
+   {
+      "fields":{
+         "image":"circuits/JPN.png",
+         "name":"Twin Ring Motegi"
+      },
+      "model":"motogp.circuit",
+      "pk":17
+   },
+   {
+      "fields":{
+         "image":"circuits/AUS_dAXQYc7.png",
+         "name":"Phillip Island"
+      },
+      "model":"motogp.circuit",
+      "pk":18
+   },
+   {
+      "fields":{
+         "image":"circuits/MAL.png",
+         "name":"Circuito Internacional de Sepang"
+      },
+      "model":"motogp.circuit",
+      "pk":19
+   },
+   {
+      "fields":{
+         "image":"circuits/VAL.png",
+         "name":"Comunitat Valenciana - Ricardo Tormo"
+      },
+      "model":"motogp.circuit",
+      "pk":20
+   }
+]

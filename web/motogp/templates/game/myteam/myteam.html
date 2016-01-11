@@ -1,0 +1,109 @@
+{% extends "game/estructura.html" %}
+{% block title %}Mi Equipo {% endblock %}
+{% block contenido %}
+{% load staticfiles %}
+
+<div class="row text-center">
+	<div class="col-lg-4">
+		<div class="panel panel-primary"> 
+			<div class="panel-heading"> 
+				<h3 class="panel-title">nombre del equipo</h3> 
+			</div> 
+			<div class="panel-body">  {{ user.userprofile.uteam.name }} </div> 
+		</div>
+	</div>
+	<div class="col-lg-8">
+		<div class="panel panel-primary"> 
+			<div class="panel-heading"> 
+				<h3 class="panel-title">mis pilotos</h3> 
+			</div> 
+			<div class="panel-body">
+				{% if riders.count == 0 %}
+					<div class="alert alert-info" role="alert">
+						<p class="bg-info">No tienes ningun piloto. <a href="{% url 'market' %}" class="alert-link">Ve a la tienda</a> y ficha al menos un piloto</p>
+					</div>
+					
+				{% else %}
+				  {% for rider in riders %}
+				  <div class="col-lg-6">
+				  	<h3>{{rider}}</h3>
+				  	<img src="{{ MEDIA_URL }}{{ rider.image }}" />
+				  </div>
+				  {% endfor %}
+				{% endif %}
+			</div> 
+		</div>
+	</div>
+</div>
+
+<div class="row text-center">
+	<div class="col-lg-12">
+		<div class="panel panel-primary"> 
+			<div class="panel-heading"> 
+				<h3 class="panel-title">gastos</h3> 
+			</div> 
+			<div class="panel-body"> 
+				<div class="row">
+					<div class="col-lg-6">
+						<h3>
+							Inscripcion
+							<span class="glyphicon glyphicon-info-sign display-tooltip" aria-hidden="true" title="{{tooltip_enrolment}}"></span>
+						</h3>
+						{% if not user.userprofile.uteam.enrolment %}
+						<p>Son: {{ enrolment.value }}</p>
+						<a href="{% url 'inscribe' %}" class="btn btn-primary" >Pagar</a>		
+					  	{% else %}
+					  		<p class="text-success">Inscrito</p>
+					  	{% endif %}
+					</div>
+					<div class="col-lg-6">
+						<h3>
+							Mantenimiento
+							<span class="glyphicon glyphicon-info-sign display-tooltip" aria-hidden="true" title="{{tooltip_maintenance}}"></span>
+						</h3>
+						{% if not user.userprofile.uteam.maintenance %}
+							<p>Son: {{ maintenance.value }}</p>
+							<a href="{% url 'maintenance' %}" class="btn btn-primary">Pagar</a>
+						{% else %}
+							<p class="text-success">Mantenimiento Pagado</p>
+						{% endif %}
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						{% if user.userprofile.uteam.loan %}
+							<h3>
+								Pagar Prestamo
+								<span class="glyphicon glyphicon-info-sign display-tooltip" aria-hidden="true" title="{{tooltip_owe}}"></span>
+							</h3>
+							<div class="row">
+								<p>Tienes una deuda de: {{ user.userprofile.uteam.owe }}</p>
+								<form action="" method="post">{% csrf_token %}
+									<input id="ex6" name="qty_loan" type="text" data-slider-min="0" data-slider-max="{{ user.userprofile.uteam.owe }}" />
+									<span id="ex6CurrentSliderValLabel">Cantidad: <span id="ex6SliderVal">0</span></span>
+									<input type="submit" class="btn btn-primary" value="Pay" />
+								</form>
+							</div>
+						{% else %}
+							<h3>
+								Pedir Prestamo
+								<span class="glyphicon glyphicon-info-sign display-tooltip" aria-hidden="true" title="{{tooltip_loan}}"></span>
+							</h3>
+							<a href="{% url 'loan' %}" class="btn btn-primary" onclick="return confirm('Are you sure you want to?');">Pedir</a>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div> 
+	</div>	  
+</div>
+	<script type="text/javascript">
+		$("#ex6").slider();
+		$("#ex6").on("slide", function(slideEvt) {
+			$("#ex6SliderVal").text(slideEvt.value);
+		});
+	</script>
+
+	<p></p>
+
+{% endblock %}

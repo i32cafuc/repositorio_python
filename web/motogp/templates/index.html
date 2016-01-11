@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+{% if mensaje %}
+        {{ mensaje }}
+{% endif %}
+
+<div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3"> 
+    <div class="panel panel-default" >
+        <div class="panel-heading">
+            <div class="panel-title text-center">Login</div>
+        </div>     
+
+        <div class="panel-body" >
+            <form method="post" action="">{% csrf_token %}
+                <div class="form-group">
+                   <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input type="text" id="username" name="username" class="form-control" value="{{ username }}" placeholder="User">
+                   </div>  
+                </div>
+              
+                <div class="form-group">
+                  <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                      <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                  </div>                                                                  
+                </div>
+                <div class="form-group">
+                    <!-- Button -->
+                    <div class="col-sm-12 controls">
+                        <button type="submit" href="#" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-log-in"></i> Log in</button>
+
+                    </div>
+                    <p><a href="{% url 'signup' %}">Registrar</a></p>
+                </div>
+            </form>     
+        </div>                     
+    </div>  
+</div>
+</form>
+
+{% endblock %}

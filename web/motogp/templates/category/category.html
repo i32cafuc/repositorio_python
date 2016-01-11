@@ -1,0 +1,9 @@
+{% extends "game/estructura.html" %}
+{% block title %}Categoria {% endblock %}
+{% block contenido %}
+
+	<h2>{{category.name}}</h2>
+	<p>{{category.min_price}}</p>
+
+	<a href="{% url 'reducir' category.pk %}">Editar</a>
+{% endblock %}

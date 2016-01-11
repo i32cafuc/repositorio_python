@@ -1,0 +1,85 @@
+{% extends "game/estructura.html" %}
+{% block title %}Market {% endblock %}
+{% block contenido %}
+{% load staticfiles %}
+
+<script type="text/javascript">
+
+  function buy(pk,price){
+    $.ajax({
+      url : "{% url 'market' %}",
+      data : { id : pk },
+      type : 'POST',
+      success : function(json) {
+        $('#rider_'+pk).toggle( "slow" );
+        $('#myModal_'+pk).modal('hide');
+        $('#coin_uteam').html($('#coin_uteam').html()-price);
+        alert("Se ha efectuado la compra con exito")
+      },
+      error : function(xhr, status) {
+        alert('Ha ocurrido un error al comprar');
+        $('#myModal_'+pk).modal('hide');
+      }
+    });
+  }
+
+</script>
+
+	<table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Piloto</th>
+          <th>Categoria</th>
+          <th>Escuderia</th>
+          <th>Precio</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        {% for rider in riders %}
+            <tr id="rider_{{rider.pk}}">
+              <td>{{rider}}</td>
+              <td>{{rider.team.category}}</td>
+              <td>{{rider.team}}</td>
+              <td>{{rider.displayPrice}}</td>
+              <td>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal_{{rider.pk}}">Detalles</button>
+              </td>
+            </tr>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal_{{rider.pk}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">{{rider}}</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <img src="{{ MEDIA_URL }}{{ rider.image }}" alt="{{rider}}"/>
+                      </div>
+                      <div class="col-lg-6">
+                        <p>Escuderia: {{rider.team}}</p>
+                        <p>Valoracion: {{rider.team}}</p>
+                        <p>Sueldo: {{rider.team}}</p>
+                        <p>Precio: {{rider.displayPrice}}</p>
+                        <p>Puntos: {{rider.point}}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" onclick="buy({{rider.pk}},{{rider.price}});">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        {% endfor %}
+        </tr>
+      </tbody>
+    </table>
+
+
+{% endblock %}

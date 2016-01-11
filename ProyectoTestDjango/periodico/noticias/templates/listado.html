@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<a href="{% url 'add' %}">Add</a>
+<br>
+	{% for noticia in noticias %}
+
+		<a href="{% url 'ver' noticia.pk %}">{{ noticia.titulo }}</a> <br />
+
+	{% endfor %}
+
+    <ul class="pager">
+        {% if noticias.has_previous %}
+          <li>
+          	<a href="?page={{ noticias.previous_page_number }}"> Previous </a>
+          </li>
+        {% endif %}
+        {% if noticias.has_next %}
+          <li>
+          	<a href="?page={{ noticias.next_page_number }}"> Next </a>
+          </li>
+    	{% endif %}
+
+    <p>Pagina {{ noticias.number }} de {{ noticias.paginator.num_pages}} </p>
+    </ul>
+
+</body>
+</html>

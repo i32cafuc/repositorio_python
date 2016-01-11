@@ -1,0 +1,22 @@
+{% load staticfiles %}
+<html>
+  <head>
+
+    <title>Title</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'plugins/bootstrap-3.3.5/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/mystyle.css' %}" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      
+      {% include "_message.html" %}
+      
+      {% block contenido %} {% endblock %}
+
+    </div> <!-- /container -->
+
+  </body>
+</html>

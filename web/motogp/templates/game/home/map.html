@@ -1,0 +1,67 @@
+{% load staticfiles %}
+
+<div id="display_map" style="height: 500px; width: 950px" class="centrarDiv"></div>
+
+<script src="{% static 'plugins/map/datamaps-all.js' %}"></script>
+
+<script type="text/javascript">
+
+var bombs = new Backbone.Collection([
+{% for race in races %}
+    {
+        name: "{{race}}",
+        radius: 0,
+        yeild: 60,
+        country: "{{race.country}}",
+        significance: '',
+        date: "{{race.date_race}}",
+        fillKey: "{{race.country.iso3}}",
+        latitude: {{race.country.latitude}},
+        longitude: {{race.country.longitude}}
+    },
+{% endfor %}
+]);
+
+    var yields = bombs.pluck('yeild');
+
+    var min = 40;//d3.min( yields );
+    var max = 100; //d3.max( yields );
+
+    var scale = d3.scale.pow()
+        .domain([min, max])
+        .range([10, 40]);
+
+    bombs.each(function(val, idx) {
+        bombs.at(idx).set('radius', scale(val.get('yeild')));
+    });
+
+   $("#display_map").datamap({
+        scope: 'world',
+        bubbles: bombs.toJSON(),
+        bubble_config: {
+            popupTemplate: _.template([
+                '<div class="hoverinfo"><strong><%= data.name %></strong>',
+                '<br/>País: <%= data.country %>',
+                '<br/>Fecha: <%= data.date %>',
+                '</div>'].join(''))
+        },
+        geography_config: {
+            popupOnHover: false,
+            highlightOnHover: false
+        },
+        //Color de relleno del pais
+        fills: {
+            {% for country in countries %}
+            '{{country.iso3}}': '{{country.color_fill}}',
+            {% endfor %}
+            defaultFill: '#EDDC4E'
+        },
+        //Asignar el color al pais
+        data: {
+            {% for country in countries %}
+            '{{country.iso3}}': {fillKey: '{{country.iso3}}'},
+            {% endfor %}
+        }
+    });
+
+</script>

@@ -1,0 +1,14 @@
+{% extends "game/estructura.html" %}
+{% block title %} Login {% endblock %}
+{% block contenido %}
+
+{% if message %}
+	{{message}}
+{% endif %}
+
+<form action="" method="post">{% csrf_token %}
+	{{form.as_p}}
+	<input type="submit" value="submit" />
+</form>
+
+{% endblock %}

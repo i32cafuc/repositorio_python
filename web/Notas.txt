@@ -1,0 +1,76 @@
+=====================================
+Instalación y Ejecución de la App
+=====================================
+
+Para la ejecución del servidor, hay que instalar estos paquetes adicionales que se ha usado en la aplicación:
+
+1) Se ha instalado un tema usando bootstrap en la parte de Administración.
+   Si a la hora de ejecutar runserver, muestra el fallo de:
+	ImportError: No module named django_admin_bootstrapped
+   Hay que instalarlo con el siguiente comando:
+	pip install django-admin-bootstrapped
+2) Se ha instalado el paquete Pillow, para trabajar con imagenes,
+   Si a la hora de ejecutar runserver, muestra el fallo de:
+	HINT: Get Pillow at https://pypi.python.org/pypi/Pillow or run command "pip install Pillow".
+   Hay que instalarlo con el siguiente comando:
+	pip install Pillow
+
+
+=====================================
+Administración
+=====================================
+Existen dos secciones de administración, la que viene por defecto en django, que se accede mediante la url:
+http://localhost:8000/admin/login/
+Se ha cambiado el diseño con un plugin para que tenga los estilos de bootstrap.
+
+Y otra, desarrollada a medida que se puede acceder logueandose desde el juego con los datos del usuario del administrador, url:
+http://localhost:8000/
+Esta parte, tiene un dashboard sacada de una plantilla. Los gráficos y estadisticas que aparecen son estaticos, estan puestos de cara
+a un futuro, ya que tengo pensado publicar esta web.
+La parte funcional del sitio esta en:
+	- Despues de carrera: En la que se introducen las posiciones de los pilotos cuando acaba la carrera, para actualizar datos de pilotos
+	y aumentar el precio y datos de los pilotos.
+	- Operaciones: Solo implementado el reinicio de los datos de los pilotos para cuando empiece una nueva temporada.
+Desde esta sección se puede acceder a la otra administración mediante el enlace de "Admin site" situado en la barra superior, en el nombre del usuario
+
+
+=====================================
+Usuarios
+=====================================
+
+Administrador:
+	usuario: admin
+	pass:    a
+
+Jugadores:
+	usuario: usuario1
+	pass: 	 123456789
+	liga:    liga1
+
+	usuario: usuario2
+	pass: 	 123456789
+	liga:    liga1
+
+	usuario: usuario3
+	pass: 	 123456789
+	liga:    liga1
+
+	usuario: usuario4
+	pass: 	 123456789
+	liga:    liga1
+
+	usuario: usuario5
+	pass: 	 123456789
+	liga:    liga2
+
+	usuario: usuario6
+	pass: 	 123456789
+	liga:    liga2
+
+	usuario: usuario7
+	pass: 	 123456789
+	liga:    liga2
+
+	usuario: usuario8
+	pass: 	 123456789
+	liga:    liga2

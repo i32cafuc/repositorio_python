@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+
+<div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3"> 
+    <div class="panel panel-default" >
+        <div class="panel-heading">
+            <div class="panel-title text-center">Registrar</div>
+        </div>     
+
+        <div class="panel-body" >
+            <form method="post" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Registrar</button>
+            </form>
+            <p><a href="{% url 'index' %}">Iniciar Sesion</a></p>
+        </div>                     
+    </div>  
+</div>
+
+{% endblock %}

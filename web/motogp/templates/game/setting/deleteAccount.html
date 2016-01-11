@@ -1,0 +1,19 @@
+
+{% extends "game/estructura.html" %}
+{% block title %}Borrar Cuenta{% endblock %}
+{% block contenido %}
+
+{% include "game/setting/menu.html" %}
+<form method="post" action="">
+	{% csrf_token %}
+	<blockquote>
+  		<p>Al borrar tu cuenta, se borraran todos los datos de nuestra base de datos</p> 
+	</blockquote>
+	<button type="submit" class="btn btn-danger">Borrar</button>
+</form>
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,38 @@
+{% load staticfiles %}
+
+<link href="{% static 'plugins/timecircles/TimeCircles.css' %}" rel="stylesheet">
+<script src="{% static 'plugins/timecircles/TimeCircles.js' %}"></script>
+
+<div id="CountDownTimer" data-date="{{next_race}}" style="height: 30%;"></div>
+
+<script type="text/javascript">
+$("#CountDownTimer").TimeCircles({
+    "animation": "ticks",
+    "bg_width": 1.2,
+    "fg_width": 0.03,
+    "circle_bg_color": "#60686F",
+    "count_past_zero": false,
+    "time": {
+        "Days": {
+            "text": "Days",
+            "color": "#FFCC66",
+            "show": true
+        },
+        "Hours": {
+            "text": "Hours",
+            "color": "#99CCFF",
+            "show": true
+        },
+        "Minutes": {
+            "text": "Minutes",
+            "color": "#BBFFBB",
+            "show": true
+        },
+        "Seconds": {
+            "text": "Seconds",
+            "color": "#FF9999",
+            "show": true
+        }
+    }
+});
+</script>       
